@@ -1,33 +1,210 @@
-.App {
+/* // * {
+  //   font-family: "roboto";
+  // } */
+  @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+   
+  html {
+  background-image: linear-gradient(to bottom, #3f0512, #650019, #8d001b, #b50018, #dc000a);
+  background-repeat: no-repeat;
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  height: auto;}
+  
+  .container{
+    width: 750px;
+    margin: 40px auto 25px auto;
   }
-  to {
-    transform: rotate(360deg);
+  
+  h1{
+    font-family: 'Indie Flower';
+    font-size: 10vh;
   }
-}
+  h2{
+    font-size: 5vh;
+    font-family: 'Indie Flower';
+    /* text-decoration: underline; */
+  }
+  .lenght{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .breakSession {
+    font-family: 'Indie Flower';
+    font-size: 4vh;
+    font-weight: bold;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    color: white;
+   
+    
+  }
+  .timer{
+    height: 55vh;
+    width: 55vh;
+    /* background-color: #bbb; */
+    border-radius: 50%;
+    border: 4px solid #ffff;
+    /* display: flex; */
+    /* justify-content: center; */
+    flex-direction: column;
+    /* align-items: center;
+    justify-self: center; */
+    margin: 0px auto 15px auto;  
+  }
+  .timer-label{
+    font-size: 6vh;
+    /* margin-top: 30px;
+    display: flex;
+    align-items: end;
+    justify-content: center; */
+  }
+  .time-left{
+    font-size: 20vh;
+    margin-top: 10px;
+    font-weight: lighter;
+    
+    
+  }
+  .incre-decre{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Indie Flower'
+  }
+  Button {
+    -moz-box-shadow:inset 0px 1px 0px 0px #9fb4f2;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #9fb4f2;
+    box-shadow:inset 0px 1px 0px 0px #9fb4f2;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
+    background:-moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+    background:-webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+    background:-o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+    background:-ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+    background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e',GradientType=0);
+    background-color:#7892c2;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #4e6096;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #283966;
+  }
+  Button:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #476e9e), color-stop(1, #7892c2));
+    background:-moz-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+    background:-webkit-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+    background:-o-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+    background:-ms-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+    background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#476e9e', endColorstr='#7892c2',GradientType=0);
+    background-color:#476e9e;
+  }
+  Button:active {
+    position:relative;
+    top:1px;
+  }
+  .start-reset{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px auto 20px auto;
+    
+  }
+  .myButton {
+    -moz-box-shadow:inset 0px 1px 0px 0px #9fb4f2;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #9fb4f2;
+    box-shadow:inset 0px 1px 0px 0px #9fb4f2;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
+    background:-moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+    background:-webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+    background:-o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+    background:-ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+    background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e',GradientType=0);
+    background-color:#7892c2;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:30%;
+    border:1px solid #4e6096;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:15px 32px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #283966;
+  }
+  
+  footer{
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media only screen and (max-width: 760px){
+    .container{
+    width: 650px;
+    margin: 40px auto 25px auto;
+  }
+    h1{
+    font-family: 'Indie Flower';
+    font-size: 8vh;
+  }
+    h2{
+    font-size: 4vh;
+    /* text-decoration: underline; */
+  }
+  }
+  @media only screen and (max-width: 480px){
+    .container{
+    width: 400px;
+    height: 450px;
+    margin: 40px auto 40px auto;
+  }
+    h1{
+    font-family: 'Indie Flower';
+    font-size: 6vh;
+  }
+    h2{
+    font-size: 3vh;
+    /* text-decoration: underline; */
+  }
+    .timer-label{
+    height: 40vh;
+    width: 40vh;
+    /* background-color: #bbb; */
+    border-radius: 50%;
+    border: 3px solid #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    margin: 0px auto 15px auto;  
+  }
+    .time-left{
+    font-size: 15vh
+  }
+    .start-reset{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px auto 20px auto;
+    
+  }
+  }
+  
